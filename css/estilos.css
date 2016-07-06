@@ -2,35 +2,51 @@
 	margin: 0;
 	padding: 0;
 }
+body{
+	background: black;	
+}
 
 nav{
 	width: 250px;
 	top: 0px;
-	left: 0px;
+	left: -100%;
 	position: absolute;
 	padding-top: 5em;
-	padding-left: 5px;
+	padding-left: 0px;
 	line-height: 42px;
 	height: 100%;
-	
 	background: rgba(0, 102, 255,.4);
+	transition: .8s;
 }
 nav a{
 	list-style: none;
 	text-decoration: none;
-	padding-left: 0px;
+	padding-left: 3px;
 	color: white;
+	
 	font-family: 'Lora', serif;
 	font-style: italic;
-	font-weight: 200;
+	font-weight: 500;
 
 }
+nav.active{
+	left:0px;
+}
 
+nav ul{
+	box-shadow: 4px 0 rgba(0, 102, 255,.4) inset;
+}
 nav ul li{
+	
 	display: block;
+	left: 0px;
+}
+nav span{
+	padding-left: 4px;
+	padding-right: 5px;
 }
 
-.boton-menu{
+header .boton-menu{
 	top: 30px;
 	left: 30px;
 	list-style: none;
