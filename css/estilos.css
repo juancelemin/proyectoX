@@ -3,6 +3,7 @@
 	padding: 0;
 }
 body{
+
 	background: white transparent;
 	font-family: 'Open Sans', sans-serif;
 }
@@ -14,15 +15,15 @@ header{
 }
 nav{
 	display: block;
-	width: 250px;
+	width: 18vw;
 	top: 0px;
 	left: -100%;
 	position: absolute;
 	padding-left: 0px;
-	line-height: 42px;
+	line-height: 3em;
 	height: 100%;
 	background: rgba(53,89,137,.5);
-	transition: .5s;
+	transition: .2s;
 	z-index: 2;
 }
 nav ul >li >div{
@@ -33,6 +34,7 @@ nav a{
 	text-decoration: none;
 	padding-left: 3px;
 	color: white;
+	text-transform: uppercase;
 	
 }
 nav.active{
@@ -68,9 +70,7 @@ h2{
 
 	margin: 8vh 0;
 }
-p{
-	
-}
+
 .boton-menu{
 
 	top: 30px;
@@ -88,21 +88,32 @@ p{
 	z-index: 3;
 }
 .asesoria-tributaria{
-	width: auto;
-	font-size: 1em;
-	
-	text-align:justify;
-	
-}
-.caracteriticas-servicios{
 	width: 60%;
 	margin: auto;
-
+	background: grey;
+}
+.asesoria-tributaria-descripcion{
+	width: 40%;
+	line-height: 1.5em;
+	display: block;
 }
 .espacio{
 	height: 50vh;
 }
+.image{
 
+	width: 100%;
+}
+#button {
+
+
+    background-color: rgb(128, 159, 255);
+    display: inline-block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    
+}
 
 @media screen and (max-width: 650px) {
 	nav{
