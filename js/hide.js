@@ -1,6 +1,6 @@
  var $burguerButton = document.getElementById('burguer-button');
  var $menu = document.getElementById('menu');
- 
+ $estado =false;
 
       $burguerButton.addEventListener('click', toggleMenu);//nombre de la funcion 
 

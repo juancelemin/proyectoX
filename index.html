@@ -2,6 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<script type = "text/javascript" 
+         src = "http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/estilos.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/hover.css">
@@ -18,8 +23,8 @@
 			<li id ="service">
 				<div class ="hvr-bounce-to-right" ><a href="#"><span class ="icon-stackoverflow"></span>Servicios</a></div>
 				<ul id="submenu">
-					<li class="hvr-bounce-to-right"><a href="#asesoria"><span class ="icon-stats-dots"></span>Asesoria Tributaria</a></li>
-					<li class="hvr-bounce-to-right"><a href="#"><span class ="icon-stats-bars"></span>SERVICIO CONTABLE </a></li>
+					<li class="hvr-bounce-to-right" id="tributaria"><a href="#asesoria"><span class ="icon-stats-dots"></span>Asesoria Tributaria</a></li>
+					<li class="hvr-bounce-to-right"><a href="#Acontable" id="contable"><span class ="icon-stats-bars"></span>SERVICIO CONTABLE </a></li>
 					<li class="hvr-bounce-to-right"><a href="#"><span class ="icon-books"></span>Normas Internacionales</a></li>
 					<li class="hvr-bounce-to-right"><a href="#"><span class ="icon-bookmarks  "></span>Auditoria</a></li>
 					<li class="hvr-bounce-to-right"><a href="#"><span class ="icon-user-tie "></span>Revisoria fiscal </a></li>
@@ -35,12 +40,12 @@
 	</header>
 
 	<!--contenido-->
-	<section class ="asesoria-tributaria" >
+	<section class ="asesoria-tributaria " id="Atributaria" >
 		<article>
 			<img class ="image"src="imagenes/asesoriaTributaria.jpg">
 		</article>
 		
-		<div class ="caracteriticas-servicios" id="asesoria">
+		<div class ="caracteriticas-servicios">
 			<h2>ASESORIA TRIBUTARIA </h2>
 			<p>
 				&#10003; Planeación, estrategias y análisis dentro del marco normativo actualizado.<br>
@@ -60,6 +65,30 @@
 			</p>
 		</div>
 	</section>
+
+
+	<section class ="serviciocontablecontenedor" id="Acontable">
+		<article>
+			<img src="imagenes/servicioContable.jpg" alt="" class="image">
+		</article>
+		<div class="serviciocontablegeneral">
+			<h2>Servicio Contable</h2>
+			<p>
+				Ejecución de Procesos Contables<br>
+				Preparación de Estados Financieros<br>
+				Elaboración de Reportes a Entidades de Control, tales como:<br>
+				<br>
+
+				IVA <br>
+				•	Retención en la Fuente<br>
+				•	Medios Magnéticos<br>
+				•	Declaración de Renta<br>
+				•	Impuesto de Industria y comercio<br>
+			</p>
+		</div>
+		
+	</section>
+
 	<script type="text/javascript" src ="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script type="text/javascript" src ="js/show.js"></script>
 	<script src="js/hide.js"></script>

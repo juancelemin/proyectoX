@@ -68,6 +68,8 @@ span{
 h2{
 	display: block;
 	padding-bottom: 40px;
+	text-align: center;
+	border-bottom: 1px solid white;
 }
 p{
 
@@ -88,11 +90,16 @@ p{
 	color: white;
 	z-index: 3;
 }
+#Atributaria,#Acontable{
+	display: none;
+}
+
 .asesoria-tributaria{
 	width: auto;
 	text-align:justify;
 	background: #6495ED;
 	padding-bottom: 100px;
+
 }
 .caracteriticas-servicios{
 	width: 60%;
@@ -101,12 +108,31 @@ p{
 	margin-top:100px;
 	margin-bottom: 100px;
 	line-height: 1.8em;
-	font-size: 1.5em;
+	font-size: 1.3em;
 	color: white;
-
+	
 }
+.serviciocontablecontenedor{
+	width: auto;
+	text-align:justify;
+	background: #6495ED;
+	padding-bottom: 100px;
+}
+
+.serviciocontablegeneral{
+	width: 60%;
+	margin: auto;
+	display: block;
+	margin-top:100px;
+	margin-bottom: 100px;
+	line-height: 1.3em;
+	font-size: 1.3em;
+	color: white;
+}
+
 .image{
 	width: 100%;
+	height: auto;
 }
 #Showbutton {
 	width: 100px;
@@ -139,20 +165,7 @@ p{
 	.boton-menu{
 		z-index: 3;
 	}
-	.caracteriticas-servicios{
+	.caracteriticas-servicios,.serviciocontablegeneral,.serviciocontablecontenedor,.descripcion{
 		font-size: 1em;
-	}
-	.descripcion{
-		font-size: 1em;
-	}
-	
-}
-@media screen and (max-width: 1025px){
-	nav{
-		width: 50%;
-		height: 100%;
-		text-align: center;
-		z-index: 2;
-		background: rgba(14,14,15,.5);
 	}
 }

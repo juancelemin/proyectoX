@@ -16,5 +16,16 @@ $('#Showbutton').click(function(event){
 
 });
 
+$( '#tributaria' ).click(function() {
 
-     
+  $( 'section' ).hide();
+  $( "#Atributaria" ).toggle( "explode" );
+
+});
+
+$( '#contable' ).click(function() {
+	$( 'section' ).hide();
+  $( "#Acontable" ).toggle( "explode" );
+});
+
+
